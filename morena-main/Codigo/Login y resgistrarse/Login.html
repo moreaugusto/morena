@@ -1,0 +1,49 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/icono.png">
+    <link rel="stylesheet" href="login.css">
+    <title> Inicie sesion en Casino Chowder </title>
+</head>
+
+<body>
+    <div class="container">
+        <section class="MiUsuario">
+            <div class="navbar">
+                <div class="items">
+                    <img class="logo" src="../img/Logo.png">
+                    <div><a href="../Login y resgistrarse/Login.html">INGRESAR</a></div>
+                    <div><a href="../Login y resgistrarse/register.html">REGISTRARSE</a></div>
+                    <div class="dropdown">
+                        <span><img src="../img/mundo.png" alt=""></span>
+                        <div class="dropdown-content">
+                        <p>Idiomas</p>
+                        <div class="botones1">
+                            <button  onclick="location.href='../Login y resgistrarse/Login.html'" class="boton1">Español</button>
+                            <button  onclick="location.href='../Login y resgistrarse/loginIngles.html'" class="boton1">Ingles</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="Fondo">
+            <form action="php/login.php" method="POST">
+                <div class="inicio">
+                    <img class="titulo" src="../img/casinoChowder.png">
+                    <h1>¡Ingrese su usuario y contraseña para empezar a jugar!</h1>
+                        <div clas="form">
+                            <div class="input-form">
+                                <input class="fon" type="text"  name="usuario" placeholder="Usuario" required>
+                            </div>
+                            <div class="input-form">
+                                <input class="fon" type="password" name="contrasena" placeholder="Contraseña" required>
+                            </div>
+                        </div>
+                        <input class="boton" type="submit" form="login-form" value="Iniciar sesion">
+                        <p>a</p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
