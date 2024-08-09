@@ -1,0 +1,49 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/icono.png">
+    <link rel="stylesheet" href="login.css">
+    <title> Log in to casino chowder </title>
+</head>
+
+<body>
+    <div class="container">
+        <section class="MiUsuario">
+            <div class="navbar">
+                <div class="items">
+                    <img class="logo" src="../img/Logo.png">
+                    <div><a href="../Login y resgistrarse/loginIngles.html">LOGIN</a></div>
+                    <div><a href="../Login y resgistrarse/registerIngles.html">REGISTER</a></div>
+                    <div class="dropdown">
+                        <span><img src="../img/mundo.png" alt=""></span>
+                        <div class="dropdown-content">
+                        <p>Languages</p>
+                        <div class="botones1">
+                            <button  onclick="location.href='../Login y resgistrarse/Login.html'" class="boton1">Spanish</button>
+                            <button  onclick="location.href='../Login y resgistrarse/loginIngles.html'" class="boton1">English</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="Fondo">
+            <form action="php/login.php" method="POST">
+                <div class="inicio">
+                    <img class="titulo" src="../img/casinoChowder.png">
+                    <h1>¡Enter your username and password to start playing!</h1>
+                        <div clas="form">
+                            <div class="input-form">
+                                <input class="fon" type="text"  name="usuario" placeholder="User" required>
+                            </div>
+                            <div class="input-form">
+                                <input class="fon" type="password" name="contrasena" placeholder="Password" required>
+                            </div>
+                        </div>
+                        <input class="boton" type="submit" form="login-form" value="Login">
+                        <p>a</p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
