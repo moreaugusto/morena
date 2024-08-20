@@ -1,131 +1,100 @@
-*{
+* {
     padding: 0;
     margin: 0;
-
+    box-sizing: border-box;
 }
+
+body {
+    display: flex;
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center;      /* Centra verticalmente */
+    height: 100vh;            /* Ocupa toda la altura de la ventana */
+    background-color: #1D0429;
+    margin: 0;
+}
+
 .container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr 1rf));
-
-}
-body{
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente los elementos dentro de la .container */
     width: 100%;
-    background-color:#1D0429;
-
+    height: 100%;
 }
 
-.MiUsuario{
+.MiUsuario {
     background: #CD3F82;
     color: white;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
     height: 10vh;
-    position: relative;
     width: 100%;
 }
-.items{
 
+.items {
+    display: flex;
     align-items: center;
-    display: flex;
 }
 
-.items{
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.items div a{
+.items div a {
     font-size: 25px;
     padding: 16px;
     color: #E39ABD;
     text-decoration: none;
 }
-.logo{
-    width:70px;
-    height:70px;
-}
 
+.logo {
+    width: 70px;
+    height: 70px;
+}
 
 .ruleta-container {
-    position: absolute;
-    width: 600px;
-    height: 00px;
-    
-    
-}
-    
-
-.ruleta{
     position: relative;
-    margin-top: 100px;
-   
-
+    width: 700px; /* Tamaño de la ruleta grande */
+    height: 700px; /* Tamaño de la ruleta grande */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 350px
 }
 
-.ruleta2{
-    position: relative;
-    margin-top: 100px;
-   
-    
-
-}
-
-.numero {
+.ruleta {
     position: absolute;
-    width: 20px;
-    height: 20px;
-    font-size: 13px;
+    width: 100%;
+    height: 100%;
+}
+
+.ruleta2 {
+    position: absolute;
+    width: 350px; /* Ajusta el tamaño de la ruleta pequeña */
+    height: 350px; /* Ajusta el tamaño de la ruleta pequeña */
+    border-radius: 50%; /* Mantiene la forma circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; /* Asegura que esté sobre la ruleta grande */
+}
+
+.numero, .vacio {
+    position: absolute;
+    width: 33px; /* Ajusta el tamaño de los números */
+    height: 33px; /* Ajusta el tamaño de los números */
+    font-size: 23px; /* Ajusta el tamaño del texto */
     color: #fcfcfc;
     background: #000000;
-    border-radius: 10%;
+    border-radius: 50%;
     text-align: center;
-    
-   
+    line-height: 30px; /* Alinea verticalmente el texto */
 }
 .numero-rojo {
     background: #ff0000;
-    
+}
+
+.ruleta .numero {
+    transform-origin: center center; /* Define el punto de origen de la rotación */
 }
 
 .numero-verde {
     background: #10ee08;
-    
-    
 }
-.vacio{
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    font-size: 13px;
-    color: #fcfcfc;
-    background: #000000;
-    border-radius: 10%;
-    text-align: center;
-    
-   
-}
-
-
-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.mensaje {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    border-radius: 5px;
-    display: none;
-}
-
-
-
-
 
