@@ -1,0 +1,235 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr 1rf));
+
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color:#1D0429;
+
+}
+
+.MiUsuario{
+    background: #CD3F82;
+    color: white;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    height: 10vh;
+    position: relative;
+    width: 100%;
+}
+.items{
+
+    align-items: center;
+    display: flex;
+}
+
+.items{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.items div a{
+    font-size: 25px;
+    padding: 16px;
+    color: #E39ABD;
+    text-decoration: none;
+}
+.logo{
+    width:70px;
+    height:70px;
+}
+
+.fondo{
+    animation: spin 4s linear infinite;
+    height: auto;
+    width: 100%;
+}
+
+.ruleta-container {
+    position: absolute;
+    width:20%;
+    height: 00px;
+}
+    
+
+.ruleta{
+    position: relative;
+    margin-top: 100px;
+}
+
+.numero {
+    position: absolute;
+    width: 20px;
+    height: 40px;
+    font-size: 13px;
+    color: #fcfcfc;
+    background: #000000;
+    border-radius: 1%;
+    text-align: center;
+    text-decoration: underline;
+   
+}
+.numero-rojo {
+    background: #ff0000;
+    
+}
+
+.numero-verde {
+    background: #10ee08;
+/* Distribución de 37 números en un patrón triangular */
+.ruleta .numero:nth-child(1) {
+    transform: rotate(0deg) translate(140px) rotate(0deg);
+}
+
+.ruleta .numero:nth-child(2) {
+    transform: rotate(9.73deg) translate(140px) rotate(-9.73deg);
+}
+
+.ruleta .numero:nth-child(3) {
+    transform: rotate(19.46deg) translate(140px) rotate(-19.46deg);
+}
+
+.ruleta .numero:nth-child(4) {
+    transform: rotate(29.19deg) translate(140px) rotate(-29.19deg);
+}
+
+.ruleta .numero:nth-child(5) {
+    transform: rotate(38.92deg) translate(140px) rotate(-38.92deg);
+}
+
+.ruleta .numero:nth-child(6) {
+    transform: rotate(48.65deg) translate(140px) rotate(-48.65deg);
+}
+
+.ruleta .numero:nth-child(7) {
+    transform: rotate(58.38deg) translate(140px) rotate(-58.38deg);
+}
+
+.ruleta .numero:nth-child(8) {
+    transform: rotate(68.11deg) translate(140px) rotate(-68.11deg);
+}
+
+.ruleta .numero:nth-child(9) {
+    transform: rotate(77.84deg) translate(140px) rotate(-77.84deg);
+}
+
+.ruleta .numero:nth-child(10) {
+    transform: rotate(87.57deg) translate(140px) rotate(-87.57deg);
+}
+
+.ruleta .numero:nth-child(11) {
+    transform: rotate(97.3deg) translate(140px) rotate(-97.3deg);
+}
+
+.ruleta .numero:nth-child(12) {
+    transform: rotate(107.03deg) translate(140px) rotate(-107.03deg);
+}
+
+.ruleta .numero:nth-child(13) {
+    transform: rotate(116.76deg) translate(140px) rotate(-116.76deg);
+}
+
+.ruleta .numero:nth-child(14) {
+    transform: rotate(126.49deg) translate(140px) rotate(-126.49deg);
+}
+
+.ruleta .numero:nth-child(15) {
+    transform: rotate(136.22deg) translate(140px) rotate(-136.22deg);
+}
+
+.ruleta .numero:nth-child(16) {
+    transform: rotate(145.95deg) translate(140px) rotate(-145.95deg);
+}
+
+.ruleta .numero:nth-child(17) {
+    transform: rotate(155.68deg) translate(140px) rotate(-155.68deg);
+}
+
+.ruleta .numero:nth-child(18) {
+    transform: rotate(165.41deg) translate(140px) rotate(-165.41deg);
+}
+
+.ruleta .numero:nth-child(19) {
+    transform: rotate(175.14deg) translate(140px) rotate(-175.14deg);
+}
+
+.ruleta .numero:nth-child(20) {
+    transform: rotate(184.87deg) translate(140px) rotate(-184.87deg);
+}
+
+.ruleta .numero:nth-child(21) {
+    transform: rotate(194.6deg) translate(140px) rotate(-194.6deg);
+}
+
+.ruleta .numero:nth-child(22) {
+    transform: rotate(204.33deg) translate(140px) rotate(-204.33deg);
+}
+
+.ruleta .numero:nth-child(23) {
+    transform: rotate(214.06deg) translate(140px) rotate(-214.06deg);
+}
+
+.ruleta .numero:nth-child(24) {
+    transform: rotate(223.79deg) translate(140px) rotate(-223.79deg);
+}
+
+.ruleta .numero:nth-child(25) {
+    transform: rotate(233.52deg) translate(140px) rotate(-233.52deg);
+}
+
+.ruleta .numero:nth-child(26) {
+    transform: rotate(243.25deg) translate(140px) rotate(-243.25deg);
+}
+
+.ruleta .numero:nth-child(27) {
+    transform: rotate(252.98deg) translate(140px) rotate(-252.98deg);
+}
+
+.ruleta .numero:nth-child(28) {
+    transform: rotate(262.71deg) translate(140px) rotate(-262.71deg);
+}
+
+.ruleta .numero:nth-child(29) {
+    transform: rotate(272.44deg) translate(140px) rotate(-272.44deg);
+}
+
+.ruleta .numero:nth-child(30) {
+    transform: rotate(282.17deg) translate(140px) rotate(-282.17deg);
+}
+
+.ruleta .numero:nth-child(31) {
+    transform: rotate(291.9deg) translate(140px) rotate(-291.9deg);
+}
+
+.ruleta .numero:nth-child(32) {
+    transform: rotate(301.63deg) translate(140px) rotate(-301.63deg);
+}
+
+.ruleta .numero:nth-child(33) {
+    transform: rotate(311.36deg) translate(140px) rotate(-311.36deg);
+}
+
+.ruleta .numero:nth-child(34) {
+    transform: rotate(321.09deg) translate(140px) rotate(-321.09deg);
+}
+
+.ruleta .numero:nth-child(35) {
+    transform: rotate(330.82deg) translate(140px) rotate(-330.82deg);
+}
+
+.ruleta .numero:nth-child(36) {
+    transform: rotate(340.55deg) translate(140px) rotate(-340.55deg);
+}
+
+.ruleta .numero:nth-child(37) {
+    transform: rotate(350.28deg) translate(140px) rotate(-350.28deg);
+}
