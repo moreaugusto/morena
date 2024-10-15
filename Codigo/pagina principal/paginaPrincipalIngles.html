@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casino Chowder</title>
+    <link rel="icon" href="../img/icono.png">
+    <link rel="stylesheet" href="paginaPrincipal.css">
+</head>
+<body>
+    <div class="container">
+        <section class="MiUsuario">
+            <div class="navbar">
+                <div class="saldo-container">
+                    <img class="logo" src="../img/Logo.png">
+                    <div class="miSaldo"></div>
+                </div>
+                
+                <div class="items">
+                    <div><a href="#">HOME</a></div>
+                    <div><a href="#juegos">GAMES</a></div>
+                    <div><a href="#">COMMENTS</a></div>
+                        <div class="dropdown">
+                        <span><img src="../img/mundo.png" alt=""></span>
+                        <div class="dropdown-content">
+                        <p>Language</p>
+                        <div class="botones1">
+                            <button  onclick="location.href='../pagina principal/paginaPrincipal.html'" class="boton1">Spanish</button>
+                            <button  onclick="location.href='../pagina principal/paginaPrincipalIngles.html'" class="boton1">English</button>
+                        </div>
+                     </div>
+                    </div>
+                </div>
+                <div class="user">
+                    <div class="dropdown2">
+                        <span><img class="usuario" src="../img/user.png" alt=""></span>
+                        <div class="dropdown-content2">
+                            <div class="perfil">
+                                <img src="../img/user.png" alt="">
+                            </div>
+                            <div class="edit">
+                                <button id="ampliar-usuario"><img src="../img/edit.png"></button>
+                            </div>
+                            <p>User</p>
+                            <p>user@gmail.com</p>
+                            <button onclick="location.href='../Login y resgistrarse/Login.html'">Cerrar sesión</button>
+                        </div>
+                    </div> 
+        <div class="dropdown-content3">
+                        <button id="cerrar-usuario">X</button>
+                        
+                        <div class="seccionA">
+                            <div class="perfil">
+                                <img id="profile-picture" src="../img/user.png" alt="Foto de perfil">
+                            </div>
+                            <div class="input">
+                                <p>Change username</p><input type="text">
+                            </div>
+                        </div>
+                        <div class="image-options"><h1>Change profile picture</h1>
+                            <img src="../img/pfp1.jpg" alt="Opción 1" onclick="selectImage(this)">
+                            <img src="../img/pfp2.jpg" alt="Opción 2" onclick="selectImage(this)">
+                            <img src="../img/pfp3.jpg" alt="Opción 3" onclick="selectImage(this)">
+                            <img src="../img/pfp4.jpg" alt="Opción 4" onclick="selectImage(this)">
+                                
+                        </div>
+                        <button class="Guardar">Save</button>
+                    </div>
+            </div>
+        </div>
+        </section>
+        <div class="slider">
+            <ul>
+                <li><img src="../img/promo1Ingles.jpeg" alt=""></li>
+                <li><img src="../img/promo2Ingles.jpeg" alt=""></li>
+                <li><img src="../img/promo3Ingles.jpeg" alt=""></li>
+                <li><img src="../img/promo2Ingles.jpeg" alt=""></li>
+                <li><img src="../img/promo1Ingles.jpeg" alt=""></li>
+            </ul>
+        </div>
+        <section class="secciones">
+            <div class="navbar2">
+                <div>
+                    <img class="iconos" src="../img/casa.png" alt="">
+                    <p>Home</p>
+                </div>
+                <div>
+                    <img class="iconos" src="../img/medalla.png" alt="">
+                    <p>Featured</p>
+                </div>
+                <div>
+                    <img class="iconos" src="../img/ruleta.png" alt="">
+                    <p>Roulette</p>
+                </div>
+                <div>
+                    <img class="iconos" src="../img/slot.png" alt="">
+                    <p>Slots</p>
+                </div>
+            </div>
+        </section>
+        <div class="contenedor-juego">
+            <h1 id="juegos" class="juego">¡Play, Bet and Win!</h1>
+        </div>
+            <section class="productos">
+
+			<a href="../slot/slot.html" class="producto producto--1">
+				<img class="producto__img" src="../img/chicasP.png">
+                <div class="nomJuego">
+                    <p>SLOT</p>
+                </div>
+			</a>
+			<a href="#" class="producto producto--2">
+				    <img class="producto__img" src="../img/multiplicador.jpeg">
+                    <div class="nomJuego">
+                        <p>MULTIPLIER</p>
+                    </div>
+            </a>
+			<a href="#" class="producto producto--3">
+				    <img class="producto__img" src="../img/simpsonP.png">
+                    <div class="nomJuego">
+                        <p>SLOT</p>
+                    </div>
+            </a>
+			<a href="#" class="producto producto--4">
+				<img class="producto__img" src="../img/tomyjerryP.png">
+                <div class="nomJuego">
+                    <p>ROULETTE</p>
+                </div>
+			</a>
+		</section>
+        <section class="comentarios">
+            <h2>Comments:</h2>
+            
+            <form id="comentarioForm">
+                <div class="perfil2">
+                    <img id="profile-picture" src="../img/user.png" alt="Foto de perfil"><h1>@nombreusuario</h1> 
+                </div>
+                <input id="comentarioInput" placeholder="Leave a comment..." required></input>
+                <button type="submit">Send</button>
+            </form>
+            <div id="comentariosList"></div>
+        </section>
+        <section class="pie">
+            <div>
+                <img class="hola" src="../img/Logo.png" alt="">
+                <p>2024 All rights reserved</p>
+            </div>
+            <div>
+                <h1>SECTIONS</h1>
+                <p>Casino</p>
+                <P>Casino rules</P>
+            </div>
+        </section>
+    </div>
+    <script src="java.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+

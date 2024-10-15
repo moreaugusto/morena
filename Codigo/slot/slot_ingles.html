@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casino Chowder</title>
+    <link rel="icon" href="../img/icono.png">
+    <link rel="stylesheet" href="slot.css">
+</head>
+<body>
+    <div class="container">
+        <section class="MiUsuario">
+            <div class="navbar">
+                <div class="saldo-container">
+                    <img class="logo" src="../img/Logo.png">
+                    <div class="miSaldo"></div>
+                </div>
+                <div class="items">
+                    <div><a href="../pagina principal/paginaPrincipal.html">HOME</a></div>
+                    <div><a href="#juegos">GAMES</a></div>
+                    <div><a href="#">COMMENTS</a></div>
+                    <div class="dropdown">
+                        <span><img src="../img/mundo.png" alt=""></span>
+                        <div class="dropdown-content">
+                            <p>Language</p>
+                            <div class="botones1">
+                                <button  onclick="location.href='../slot/slot.html'" class="boton1">Spanish</button>
+                                <button  onclick="location.href='../slot/slot_ingles.html'" class="boton1">English</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="user">
+                        <div class="dropdown2">
+                            <span><img class="usuario" src="../img/user.png" alt=""></span>
+                            <div class="dropdown-content2">
+                                <div class="perfil">
+                                    <img src="../img/user.png" alt="">
+                                </div>
+                                <div class="edit">
+                                    <button id="ampliar-usuario"><img src="../img/edit.png"></button>
+                                </div>
+                                <p>User</p>
+                                <p>user@gmail.com</p>
+                                <button onclick="location.href='../Login y resgistrarse/Login.html'">Sign out</button>
+                            </div>
+                        </div> 
+			<div class="dropdown-content3">
+                            <button id="cerrar-usuario">X</button>
+                            <div class="perfil">
+                                <img id="profile-picture" src="../img/user.png" alt="Foto de perfil">
+                            </div>
+                            <div class="input">
+                                <p>Change username</p><input type="text">
+                            </div>
+                            <h1>Change profile picture</h1>
+                            <div class="image-options">
+                                <img src="../img/pfp1.jpg" alt="Opción 1" onclick="selectImage(this)">
+                                <img src="../img/pfp2.jpg" alt="Opción 2" onclick="selectImage(this)">
+                                <img src="../img/pfp3.jpg" alt="Opción 3" onclick="selectImage(this)">
+                                <img src="../img/pfp4.jpg" alt="Opción 4" onclick="selectImage(this)">
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <div class="general">
+            <div class="Portadas">
+                <h1>OTHER GAMES:</h1>
+                <a href="../Slot2/slot2.html"><img class="portada1" src="../img/simpsonP.png"/></a>
+    
+                <a href="../Ruleta2/index.html"><img class="portada2" src="../img/tomyjerryP.png"/></a>
+    
+            </div>
+    
+            <div class="juego">
+                    <div class="alerta alerta-ganador">
+        <div>
+            <img class="alerta" src="../img/alertaa.jpeg" alt="">
+        </div>
+    </div>
+    <div class="premio-mensaje"></div>
+                <div class="colum">
+                    <section class="contenedor-juego-mayor">
+                        <div class="contenedor-juego">
+                        <div class="contenedor-columna contenedor-columna-1">
+                            <div class="contenedor-personaje"></div>
+                            <div class="contenedor-personaje"></div>
+                            <div class="contenedor-personaje"></div>
+                        </div>
+                        <div class="contenedor-columna contenedor-columna-2">
+                            <div class="contenedor-personaje"></div>
+                            <div class="contenedor-personaje"></div>
+                            <div class="contenedor-personaje"></div>
+                        </div>
+                        <div class="contenedor-columna contenedor-columna-3">
+                            <div class="contenedor-personaje"></div>
+                            <div class="contenedor-personaje"></div>
+                            <div class="contenedor-personaje"></div>
+                        </div>
+                    </div>
+                    <div class="caja-boton">
+                        <div class="div-cantidad"><p>Last prize:</p><b class="ultimo-premio">$0.00</b></div>
+                        <button id="jugar"><i class="fa-sharp fa-solid fa-play"></i></button>
+                        <div class="div-cantidad div-apuesta"><button class="restar">-</button><p>Bet<b class="botones">$<b class="apuesta">5</b>.00</b></p><button class="sumar">+</button></div>
+                    </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="alerta alerta-ganador">
+            <div>
+                <img class="alerta" src="../img/alertaa.png" alt="">
+            </div>
+        </div>
+        <script src="slot.js"></script>
+        <script src="https://kit.fontawesome.com/2e1536868e.js" crossorigin="anonymous"></script>
+    
+    </div>
+</body>
+</html>
+
